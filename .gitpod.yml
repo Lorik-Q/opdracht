@@ -1,0 +1,19 @@
+image: gitpod/workspace-node
+
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - command: docker compose up -d
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: notify
+  - port: 80
+    onOpen: open-browser
+  - port: 3306
+    onOpen: ignore
+
+vscode:
+  extensions:
+    - "ms-azuretools.vscode-docker"
+    - "dbaeumer.vscode-eslint"
