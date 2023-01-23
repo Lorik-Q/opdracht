@@ -9,3 +9,4 @@ CREATE TABLE IF NOT EXISTS todos
 );
 
 insert into todos (id, title, status) values (UUID(), 'mijn eerste taak', 'TODO');
+insert into todos (id, title, status) values (UUID(), 'mijn tweede taak', 'TODO');
